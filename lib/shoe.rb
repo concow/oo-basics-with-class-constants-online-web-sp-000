@@ -6,12 +6,11 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRAND << brand unless BRANDS.include?(brand)
+    BRANDS << brand unless BRANDS.include?(brand)
   end
 
   def cobble
-    self.condition = "new"                #self refers to our instance of a class here
+    self.condition = "new"                        #self refers to our instance of a class here
     puts "Your shoe is as good as new!"
   end
-
 end
