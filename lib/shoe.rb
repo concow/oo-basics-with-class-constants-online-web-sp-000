@@ -9,13 +9,6 @@ class Shoe
     BRAND << brand unless BRANDS.include?(brand)
   end
 
-  def brand=(brand)
-    @brand = brand
-    if BRAND == "new"
-      BRAND << brand
-
-  end
-
   def cobble
     self.condition = "new"                #self refers to our instance of a class here
     puts "Your shoe is as good as new!"
