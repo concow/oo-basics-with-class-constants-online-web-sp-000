@@ -1,18 +1,19 @@
 class Shoe
   attr_accessor :color, :size, :material, :condition
-  #attr_reader :brand
+  attr_reader :brand
 
   BRANDS = []
 
   def initialize(brand)
     @brand = brand
+    BRAND << brand unless BRANDS.include?(brand)
   end
 
   def brand=(brand)
     @brand = brand
     if BRAND == "new"
       BRAND << brand
-    
+
   end
 
   def cobble
